@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>计算器</title>
+<style>
+#nav {
+              background-color:#CCCCCC;
+     }
+</style>
+<script  language="javascript">
+var num;
+function fun()
+{
+   f1.txt.value+='0';
+   num=0;
+}
+
+function fun1()
+{
+   f1.txt.value+='1';
+   num=1;
+}
+
+function fun2()
+{
+   f1.txt.value+='2'
+   num=2;
+}
+
+function fun3()
+{
+   f1.txt.value+='3';
+   num=3;
+}
+
+function fun4()
+{
+   f1.txt.value+='4';
+    num=4;
+}
+
+function fun5()
+{
+   f1.txt.value+='5';
+    num=5;
+}
+
+function fun6()
+{
+   f1.txt.value+='6';
+    num=6
+}
+
+function fun7()
+{
+   f1.txt.value+='7';
+    num=7;
+}
+
+function fun8()
+{
+   f1.txt.value+='8';
+    num=8;
+}
+
+function fun9()
+{
+   f1.txt.value+='9';
+    num=9;
+}
+
+function fun_add()
+{
+   f1.txt.value+='+';
+}
+
+function fun_sub()
+{
+   f1.txt.value+='-';
+}
+
+function fun_mul()
+{
+   f1.txt.value+='*';
+}
+
+function fun_div()
+{
+   f1.txt.value+='/';
+}
+
+function fun_clear()
+{ 
+   f1.txt.value='';
+}
+
+function fun_eql()
+{
+   f1.txt.value=eval(f1.txt.value);
+}
+
+function fun_bac()
+{
+      f1.txt.value=(-1)*f1.txt.value;
+}
+
+function fun_Backspace()
+{
+      f1.txt.value=f1.txt.value.slice(0,-1);
+}
+
+function fun_point()
+{
+   f1.txt.value+='.';
+}
+
+function fun_CE()
+{
+     f1.txt.value='0';
+}
+
+</script>
+</head>
+<body>
+<center>
+<form name="f1">
+<table border="2px" bordercolor="#000000" id="nav">
+<tr>
+<td>
+<center><input type="text" name="txt"/></center>
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" value="  BS " onClick="fun_Backspace()"/>
+<input type="button" value=" +/- " onClick="fun_bac()"/>
+<input type="button" value="  .  " onClick="fun_point()"/>
+<input type="button" value="  CE " onClick="fun_CE()"/><br>
+<input type="button" value="  7  " onClick="fun7()"/>
+<input type="button" value="  8  " onClick="fun8()"/>
+<input type="button" value="  9  " onClick="fun9()"/>
+<input type="button" value="  /  " onClick="fun_div()"/><br>
+<input type="button" value="  4  " onClick="fun4()"/>
+<input type="button" value="  5  " onClick="fun5()"/>
+<input type="button" value="  6  " onClick="fun6()"/>
+<input type="button" value="  *  " onClick="fun_mul()"/><br>
+<input type="button" value="  1  " onClick="fun1()"/>
+<input type="button" value="  2  " onClick="fun2()"/>
+<input type="button" value="  3  " onClick="fun3()"/>
+<input type="button" value="  -  " onClick="fun_sub()"/><br>
+<input type="button" value="  C  " onClick="fun_clear()"/>
+<input type="button" value="  0  " onClick="fun()"/>
+<input type="button" value="  =  " onClick="fun_eql()"/>
+<input type="button" value="  +  " onClick="fun_add()"/><br>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
