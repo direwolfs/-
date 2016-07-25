@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>秒表计时</title>
+</head>
+<body>
+<script type="text/javascript">
+	var c=0;
+	var t;
+	var time_is_on=0;
+	function timeCount()
+	{
+		document.getElementById("txt").value=c;
+		c=c+1;
+		t=setTimeout("timeCount()",1000);
+	}
+	function doTimer()
+	{
+		if(!time_is_on)
+		{
+			time_is_on=1;
+			timeCount();
+		}
+	}
+	function stopCount()
+	{
+
+		//document.write((c-1)+"</br>");
+
+		//clearTimeout(t);
+	document.getElementById("demo").innerHTML=c-1+'</br>';
+		//time_is_on=0;
+	}
+
+</script>
+</body>
+<input type="button" value="star count" onclick="doTimer()">
+<input type="text" id="txt">
+<input type="button" value="stop count" onclick="stopCount()">
+<p id="demo"><br></p>
+</html>
